@@ -32,3 +32,30 @@
 // STRETCH GOALS:
     // Reset button
     // Export the image as PNG file and trigger save
+
+    /////////////////////////////////////////////////
+
+    // setting up objects for all of the assets:
+    const cat = {
+        fur: {
+            white: "assets/catHead.png",
+            tabby: "assets/tabby.png",
+            calico: "assets/calico.png",
+            tuxedo: "assets/tuxedo.png"
+        },
+        eyes: {
+            blue: "assets/eyesBlue.png",
+            gold: "assets/eyesGold.png",
+            green: "assets/eyesGreen.png",
+            oddEyes: "assets/eyesGreen.png"
+        }
+    }
+
+    $('#coats').on('change', (e) => {
+        $("#catFace").attr("src", cat.fur[e.target.value]);
+    });
+
+    $("#eyes").on("change", (e) => {
+        $("#catEyes").attr("src", cat.eyes[e.target.value]);
+    });
+
