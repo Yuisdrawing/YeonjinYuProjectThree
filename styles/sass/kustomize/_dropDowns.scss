@@ -1,0 +1,9 @@
+main {
+    .dropDowns {
+        .category {
+            label {
+                @include labelFont;
+            }
+        }
+    }
+}
