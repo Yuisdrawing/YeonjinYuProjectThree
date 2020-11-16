@@ -2,7 +2,7 @@ main {
     display: flex;
     justify-content: center;
     background-color: $grey;
-    height: 65rem;
+    height: 54rem;
     max-width: 100%;
     margin-top: 100px;
     .dropDowns {
@@ -18,14 +18,17 @@ main {
             }
             select {
                 background-color: white;
-                border: solid 1px white;
+                border: solid 3px white;
                 border-radius: 10px;
                 width: 100%;
                 font-family: $font2;
                 font-size: 26px;
-                color: $blue;
+                color: $lightBlue;
                 padding: 10px 0 5px 10px;
                 outline: none;
+            }
+            select:focus {
+                border: solid 3px $lightBlue;
             }
         }
         .category:nth-child(1) {
@@ -55,7 +58,7 @@ main {
                 width: 705px;
                 height: 705px;
                 position: absolute;
-                border: 5px solid $blue;
+                border: 5px solid $lightBlue;
             }
         }
     }

@@ -14,16 +14,19 @@
 <body>
 
     <div class="wrapper">
+        <!-- Cat portrait customization -->
         <header>
             <h1>Kitty<br>Kustomizer</h1>
-            <button id="scroll">Go Kustomize!</button>
+            <p>Choose the type of fur, eye colours, mouth, and a hat that you'd like for your kitty!</p>
+            <button id="scroll"><a href="#portrait">Go Kustomize!</a></button>
         </header>
 
         <main>
+            <!-- Dropdowns for 4 customization elements -->
             <div class="dropDowns">
                 <div class="category" id="coatCategory">
                     <label for="coats">Fur</label>
-                    <select name="coats" id="coats">
+                    <select name="coats" id="coats" class="choices">
                         <option value="white">White</option>
                         <option value="tabby">Tabby</option>
                         <option value="calico">Calico</option>
@@ -34,7 +37,7 @@
                 </div>
                 <div class="category" id="eyesCategory">
                     <label for="eyes">Eyes</label>
-                    <select name="eyes" id="eyes">
+                    <select name="eyes" id="eyes" class="choices">
                         <option value="default">Default</option>
                         <option value="blue">Blue</option>
                         <option value="gold">Gold</option>
@@ -44,7 +47,7 @@
                 </div>
                 <div class="category" id="mouthCategory">
                     <label for="mouth">Mouth</label>
-                    <select name="mouth" id="mouth">
+                    <select name="mouth" id="mouth" class="choices">
                         <option value="default">Default</option>
                         <option value="silly">Silly</option>
                         <option value="hungry">Hungry</option>
@@ -53,7 +56,7 @@
                 </div>
                 <div class="category" id="hatsCategory">
                     <label for="hats">Hats</label>
-                    <select name="hats" id="hats">
+                    <select name="hats" id="hats" class="choices">
                         <option value="noHat">No hat</option>
                         <option value="birthdayHat">Birthday hat</option>
                         <option value="topHat">Top hat</option>
@@ -62,16 +65,18 @@
                 </div>
             </div>
 
+            <!-- Cat portrait images -->
             <aside>
-                <div class="portrait">
-                    <img src="assets/bg.png" id="catFace" alt="">
-                    <img src="assets/catHead.png" id="catFace" alt="">
-                    <img src="assets/eyesdefault.png" id="catEyes" alt="">
-                    <img src="assets/mouthDefault.png" id="catMouth" alt="">
-                    <img src="assets/noHat.png" id="catHat" alt="">
+                <div class="portrait" id="portrait">
+                    <img src="assets/bg.png" id="background" alt="the backgound colour">
+                    <img src="assets/catHead.png" id="catFur" alt="the type of fur coat of your cat">
+                    <img src="assets/eyesdefault.png" id="catEyes" alt="the eyes of your cat">
+                    <img src="assets/mouthDefault.png" id="catMouth" alt="the mouth shape of your cat">
+                    <img src="assets/noHat.png" id="catHat" alt="A little hat that goes on top of your cat's head">
                 </div>
             </aside>
         </main>
+        <button id="reset" type="reset">Reset</button>
         <footer>
             <p><a href="https://junocollege.com/">Copyright © 2020 Juno College</a></p>
         </footer>

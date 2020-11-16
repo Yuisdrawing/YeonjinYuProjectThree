@@ -241,7 +241,7 @@ html {
 
 .wrapper header {
   max-width: 1920px;
-  height: 900px;
+  height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,18 +263,51 @@ html {
   color: #EDB4B4;
   font-size: 180px;
   margin-top: 300px;
+  -webkit-margin-after: 80px;
+          margin-block-end: 80px;
 }
 
-.wrapper header button {
+.wrapper header p {
+  font-family: "Prompt", sans-serif;
+  color: #EDB4B4;
+  font-size: 24px;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper header button#scroll {
   background-color: #EDB4B4;
   border: none;
-  color: #3A90A9;
-  font-family: "Bungee", cursive;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 50px;
+  padding: 37px 45px;
   margin-bottom: 300px;
+}
+
+.wrapper header button#scroll a {
+  color: #0B6680;
+  font-family: "Bungee", cursive;
+  font-size: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.wrapper button#reset {
+  background-color: #EDB4B4;
+  border: none;
+  padding: 37px 45px;
+  color: #0B6680;
+  font-family: "Bungee", cursive;
+  font-size: 50px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 
 main .dropDowns .category label {
@@ -291,7 +324,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #303030;
-  height: 65rem;
+  height: 54rem;
   max-width: 100%;
   margin-top: 100px;
 }
@@ -322,7 +355,7 @@ main .dropDowns .category label {
 
 main .dropDowns .category select {
   background-color: white;
-  border: solid 1px white;
+  border: solid 3px white;
   border-radius: 10px;
   width: 100%;
   font-family: "Prompt", sans-serif;
@@ -330,6 +363,10 @@ main .dropDowns .category select {
   color: #3A90A9;
   padding: 10px 0 5px 10px;
   outline: none;
+}
+
+main .dropDowns .category select:focus {
+  border: solid 3px #3A90A9;
 }
 
 main .dropDowns .category:nth-child(1) {
@@ -375,7 +412,7 @@ main aside .portrait img {
 }
 
 footer {
-  background-color: #3A90A9;
+  background-color: #0B6680;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,6 +435,9 @@ footer p a {
   .wrapper header h1 {
     font-size: 100px;
   }
+  .wrapper header p {
+    width: 50%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -405,19 +445,30 @@ footer p a {
     font-size: 80px;
     text-align: left;
   }
+  .wrapper header p {
+    width: 70%;
+  }
 }
 
 @media (max-width: 650px) {
   .wrapper header h1 {
+    margin-top: 100px;
     font-size: 45px;
     text-align: left;
   }
-  .wrapper header button {
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
+  .wrapper header button#scroll {
+    padding: 37px 10px;
     margin-bottom: 300px;
+  }
+  .wrapper header button#scroll a {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper header button#scroll a {
+    text-decoration: none;
+    font-size: 34px;
   }
 }
 

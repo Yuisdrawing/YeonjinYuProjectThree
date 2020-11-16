@@ -3,3 +3,9 @@
     font-size: 66px;
     color: $pink;
 }
+
+@mixin buttonStyle {
+    background-color: $pink;
+    border: none;
+    padding: 37px 45px;
+}

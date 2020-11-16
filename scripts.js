@@ -22,7 +22,7 @@
             happy: "assets/mouthHappy.png"
         },
         hats: {
-            noHat: " ",
+            noHat: "assets/nohat.png",
             birthdayHat: "assets/birthdayHat.png",
             topHat: "assets/topHat.png",
             propellerHat: "assets/propellerHat.png"
@@ -30,7 +30,7 @@
     }
 
     $('#coats').on('change', (e) => {
-        $("#catFace").attr("src", cat.fur[e.target.value]);
+        $("#catFur").attr("src", cat.fur[e.target.value]);
     });
     $("#eyes").on("change", (e) => {
         $("#catEyes").attr("src", cat.eyes[e.target.value]);
@@ -41,3 +41,15 @@
     $("#hats").on("change", (e) => {
         $("#catHat").attr("src", cat.hats[e.target.value]);
     });
+
+
+
+    
+// The reset button
+    $('#reset').on('click', (e) => {
+        const defaultCat = $(".choices").toArray();
+        defaultCat.forEach(element => {
+            element.selectedIndex = 0;
+            $(element).change();
+        });
+    })
