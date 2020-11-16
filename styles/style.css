@@ -280,19 +280,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapper header button#scroll {
-  background-color: #EDB4B4;
-  border: none;
-  padding: 37px 45px;
-  margin-bottom: 300px;
-}
-
-.wrapper header button#scroll a {
+.wrapper header a {
   color: #0B6680;
   font-family: "Bungee", cursive;
   font-size: 50px;
   text-decoration: none;
   text-align: center;
+  margin-bottom: 300px;
+  background-color: #EDB4B4;
+  border: none;
+  padding: 37px 45px;
+}
+
+.wrapper header a:hover {
+  background-color: #3A90A9;
+  color: #F4D0d0;
 }
 
 .wrapper button#reset {
@@ -312,6 +314,8 @@ html {
 
 .wrapper button#reset:hover {
   cursor: pointer;
+  background-color: #3A90A9;
+  color: #F4D0d0;
 }
 
 main .dropDowns .category label {
